@@ -1,6 +1,6 @@
 <template>
   <div class="hero" id="home">
-    <div class="container">
+    <div class="container flex column">
       <div class="hero value-proposition flex center">
         <img src="@/assets/images/graphic-one.svg" alt="">
         <div class="value">
@@ -41,7 +41,8 @@ export default {
 <style lang="scss" scoped>
 
 .value-proposition {
-  height: 80vh;
+  margin-top: -120px;
+  height: 100vh;
   img {
     position: absolute;
     top: 0;
@@ -52,14 +53,26 @@ export default {
   .value {
     z-index: 1;
   }
+  @media only screen and (max-width: 1060px) {
+      margin-top: 0;
+  }
 }
 
 #projects {
   width: 100%;
+  height: 40vh;
+  @media only screen and (max-width: 960px) {
+      align-items: center;
+      height: auto;
+  }
   .project-list {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 40px;
+    @media only screen and (max-width: 960px) {
+      flex-flow: column;
+      align-items: center;
+    }
   }
 }
 
@@ -70,6 +83,9 @@ export default {
     position: absolute;
     left: 0;
     z-index: 0;
+    @media only screen and (max-width: 650px) {
+      width: 80%;
+    }
   }
   .about-content {
     z-index: 1;

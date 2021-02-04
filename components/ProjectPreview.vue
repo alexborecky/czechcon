@@ -42,7 +42,16 @@
         }
     }
     @media only screen and (max-width: 1500px) {
-        max-width: 360px;
+        max-width: 400px;
+    }
+    @media only screen and (max-width: 1280px) {
+        max-width: 300px;
+    }
+    @media only screen and (max-width: 550px) {
+        max-width: 80%;
+        svg {
+            left: -40px;
+        }
     }
 }
 
