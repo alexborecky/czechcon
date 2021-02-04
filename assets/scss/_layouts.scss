@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+}
+
+.hero {
+    width: 100%;
+    min-height: 50vh;
+}
+
+.container {
+    max-width: 1440px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-flow: column;
+}
+
+.center {
+    align-items: center;
+}
+
+.center-column-left {
+    flex-flow: column;
+    justify-content: center;
+}
+
+.center-column-right {
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-end;
+}
