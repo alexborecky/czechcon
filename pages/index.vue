@@ -46,6 +46,11 @@ export default {
     position: absolute;
     top: 0;
     right: 0;
+    max-width: 100%;
+    z-index: 0;
+  }
+  .value {
+    z-index: 1;
   }
 }
 
@@ -64,6 +69,10 @@ export default {
     height: 100%;
     position: absolute;
     left: 0;
+    z-index: 0;
+  }
+  .about-content {
+    z-index: 1;
   }
 }
 

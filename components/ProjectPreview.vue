@@ -41,6 +41,9 @@
             text-transform: uppercase;
         }
     }
+    @media only screen and (max-width: 1500px) {
+        max-width: 360px;
+    }
 }
 
 </style>

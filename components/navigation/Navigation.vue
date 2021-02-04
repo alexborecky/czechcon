@@ -6,23 +6,27 @@
                     <img src="@/assets/images/czechcon/logo-white.svg" alt="">
                 </div>
             </nuxt-link>
-            <ul class="flex center">
-                <li><nuxt-link to="#home">Home</nuxt-link></li>
-                <li><nuxt-link to="#projects">Projekty</nuxt-link></li>
-                <li><nuxt-link to="#about">O nás</nuxt-link></li>
-                <li><nuxt-link to="#contact">Kontakt</nuxt-link></li>
-                <!-- <li><nuxt-link to="/test-page">Test</nuxt-link></li> -->
+            <ul class="flex center links">
+                    <nuxt-link 
+                        v-for="item in items"
+                        :key="item.link"
+                        to="">
+                        {{item.title}}
+                    </nuxt-link>
             </ul>
+            <sideBar />
         </div>
     </div>
 </template>
 
 <script>
+import items from '@/assets/data/navigation.js'
 const OFFSET = 120
     export default {
         name: 'Navigation',
         data () {
             return {
+                items: items,
                 showNavbar: true,
                 scrolledNav: true,
                 lastScrollPosition: 0,
@@ -81,11 +85,24 @@ const OFFSET = 120
         ul {
             // height: 100%;
             padding-left: 0;
-            li {
+            a {
                 list-style: none;
                 margin: 0 24px;
-                a {
-                    color: white;
+                color: white;
+            }
+        }
+    }
+    @media only screen and (max-width: 960px) {
+        height: 80px;
+        position: fixed !important;
+        margin-top: 0;
+        .links {
+            display: none;  
+        }
+        .container {
+            .logo {
+                img {
+                    height: 48px !important;
                 }
             }
         }
