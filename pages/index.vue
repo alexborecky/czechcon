@@ -63,13 +63,17 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 
 export default {
   async asyncData({$content}) {
         const home = await $content('home').fetch();
         return {home}
   },
+  data () {
+    return {
+
+    }
+  }
 }
 </script>
 

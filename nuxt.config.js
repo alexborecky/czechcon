@@ -5,7 +5,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Vítejte na CzechCon.cz | Home ' || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -27,6 +27,7 @@ export default {
   css: [
     '~/assets/scss/_typography.scss',
     '~/assets/scss/_layouts.scss',
+    // '~/assets/scss/_modes.scss',
   ],
   /*
   ** Plugins to load before mounting the App
@@ -38,6 +39,7 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    // '@nuxtjs/color-mode'
   ],
   /*
   ** Nuxt.js modules

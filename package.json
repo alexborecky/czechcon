@@ -1,7 +1,7 @@
 {
-  "name": "Web",
+  "name": "CzechCon",
   "version": "1.0.0",
-  "description": "My grand Nuxt.js project",
+  "description": "Webové stránky společnosti CzechCon s.r.o.",
   "author": "CzechCon s.r.o.",
   "private": true,
   "scripts": {
@@ -15,6 +15,7 @@
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
+    "@nuxtjs/color-mode": "^2.0.3",
     "@nuxtjs/style-resources": "^1.0.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",

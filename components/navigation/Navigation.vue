@@ -12,7 +12,7 @@
                     :key="item.link"
                 >
                     <nuxt-link 
-                        :to="item.link">
+                        :to="{path: '/', hash:item.link}">
                         {{item.title}}
                         <div class="underline"></div>
                     </nuxt-link>
