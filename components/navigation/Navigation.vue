@@ -7,21 +7,25 @@
                 </div>
             </nuxt-link>
             <ul class="flex center links">
+                <li
+                    v-for="item in items" 
+                    :key="item.link"
+                >
                     <nuxt-link 
-                        v-for="item in items"
-                        :key="item.link"
-                        to="">
+                        :to="item.link">
                         {{item.title}}
+                        <div class="underline"></div>
                     </nuxt-link>
+                </li>
             </ul>
-            <sideBar />
+            <!-- <sideBar /> -->
         </div>
     </div>
 </template>
 
 <script>
 import items from '@/assets/data/navigation.js'
-const OFFSET = 120
+const OFFSET = 60
     export default {
         name: 'Navigation',
         data () {
@@ -85,36 +89,37 @@ const OFFSET = 120
         ul {
             // height: 100%;
             padding-left: 0;
+            list-style: none;
             a {
                 list-style: none;
                 margin: 0 24px;
                 color: white;
+                position: relative;
+                .underline {
+                    transition: .3s ease-in-out;
+                    height: 4px;
+                    width: 0%;
+                    background-color: $main-orange;
+                    position: absolute;
+                    left: 0;
+                    margin-top: 4px;
+                    border-radius: 4px;
+                }
+                &:hover {
+                    .underline {
+                        width: 100%;
+                    }
+                }
             }
         }
     }
     @media only screen and (max-width: 960px) {
-        height: 80px;
-        position: fixed !important;
-        margin-top: 0;
-        .links {
-            display: none;  
-        }
-        .container {
-            .logo {
-                img {
-                    height: 48px !important;
-                }
-            }
-        }
+        display: none;
     }
 }
 
 .colour {
     background-color: transparent;
-}
-
-nuxt-link-exact-active {
-    font-weight: 800;
 }
 
 .navigation.hidden-navbar {

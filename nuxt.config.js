@@ -44,6 +44,7 @@ export default {
   */
   modules: [
     '@nuxtjs/style-resources',
+    '@nuxt/content',
   ],
 
   styleResources: {
