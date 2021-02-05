@@ -53,3 +53,15 @@ body {
     justify-content: center;
     align-items: flex-end;
 }
+
+.desktop {
+    @media only screen and (max-width: 650px) {
+        display: none;
+    }
+}
+
+.phone {
+    @media only screen and (min-width: 650px) {
+        display: none;
+    }
+}

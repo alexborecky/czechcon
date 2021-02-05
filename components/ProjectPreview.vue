@@ -46,7 +46,8 @@
             align-self: flex-end;
         }
         img {
-            width: 100%;
+            width: auto;
+            max-width: 240px;
         }
         a {
             align-self: flex-end;
@@ -70,6 +71,14 @@
     }
     @media only screen and (max-width: 1280px) {
         max-width: 300px;
+    }
+    @media only screen and (max-width: 960px) {
+        max-width: 400px;
+        margin-bottom: 80px;
+        .element {
+            left: -40px;
+            top: -24px;
+        }
     }
     @media only screen and (max-width: 550px) {
         max-width: 80%;
