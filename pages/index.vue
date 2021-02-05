@@ -43,16 +43,17 @@
         <div class="contact-content">
           <h2>Kontaktujte nás</h2>
           <div class="contacts flex column center">
-            <a href="mailto:info@czechcon.cz">info@czechcon.cz</a>
-            <a href="tel:+420123456789">+420123456789</a>
+            <a href="mailto:info@czechcon.cz">{{home.email}}</a>
+            <!-- <a href="tel:+420123456789">+420123456789</a> -->
           </div>
           <div class="legal flex column middle">
             <ul class="flex column center">
-              <li><p>CzechCon s.r.o.</p></li>
-              <li><p>Kaprova 42/14, 110 00 Praha 1</p></li>
-              <li><p>Česká republika</p></li>
-              <li><p>IČ: 25260651</p></li>
-              <li><p>DIČ: CZ25260651</p></li>
+              <li><p>{{home.comp}}</p></li>
+              <li><p>{{home.address}}</p></li>
+              <li><p>{{home.country}}</p></li>
+              <li><p>{{home.ic}}</p></li>
+              <li><p>{{home.dic}}</p></li>
+              <li><p>Datová schránka: {{home.dataMail}}</p></li>
             </ul>
           </div>
         </div>
@@ -171,7 +172,7 @@ export default {
     }
   }
   .legal {
-    margin: 40px 0;
+    margin-top: 40px;
     ul {
       padding-left: 0;
       list-style: none;
