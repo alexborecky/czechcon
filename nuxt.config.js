@@ -13,7 +13,7 @@ export default {
       { property: 'og:type', content: 'home page'},
       { property: 'og:url', content: 'https://czechcon.cz'},
       { property: 'og:title', content: 'Czechcon.cz - Posíláme nové značky do světa' },
-      { property: 'og:image', content: 'https://ik.imagekit.io/alexborecky/CzechCon/og_Ur0luZq29.png' },
+      { property: 'og:image', content: 'https://ik.imagekit.io/alexborecky/CzechCon/ogImage_dC66EPX5MP.png' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
