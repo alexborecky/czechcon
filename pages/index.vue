@@ -5,7 +5,7 @@
         <img src="@/assets/images/graphic-one.svg" alt="">
         <div class="value">
           <h1>{{home.value}}</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus semper ultrices ut volutpat, erat tortor. Donec cursus pellentesque ornare aliquam faucibus amet.</p>
+          <p class="sub-value">{{home.subValue}}</p>
         </div>
       </div>
       <div class="hero flex center-column-left" id="projects">
@@ -22,9 +22,9 @@
               :link="home.sLink"
             />
             <ProjectPreview 
-              title="https://ik.imagekit.io/alexborecky/CzechCon/vygruntujeme_ghqeaO3ehUpR.png"
-              :description="home.vygruntujeme"
-              :link="home.vygLink"
+              title=""
+              description="Připravujeme"
+              link=""
             />
         </div>
       </div>
@@ -91,6 +91,11 @@ export default {
   }
   .value {
     z-index: 1;
+    margin-top: -10vh;
+  }
+  .sub-value {
+    font-size: 24px;
+    opacity: .56;
   }
   @media only screen and (max-width: 1060px) {
       margin-top: 0;

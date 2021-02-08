@@ -1,13 +1,13 @@
 ---
 value: 'Posíláme nové značky do světa'
-
+subValue: 'Nápadem to začíná, výzvami pokračuje'
 
 
 # Projects
-vygruntujeme: 'Toto je krátký popis projektu, který někam směřuje'
+vygruntujeme: 'Profesionální úklid v Praze. Uklízíme, čistíme, dezinfikujeme.'
 vygLink: 'https://vygruntujeme.cz'
 
-eshop: 'Toto je krátký popis projektu, který směřuje na eshop Vygruntujeme a je o něco delší'
+eshop: 'Online drogerie.'
 sLink: 'https://vygruntujeme-eshop.cz'
 
 about: 'Na trhu jsme jako rodinná firma od roku 1996. Všechny naše projekty začínáme od nuly. Prvotnímu nápadu vdechujeme život a pokračujeme v jeho rozvoji, až z něj vzniká dospělá a fungující značka.'
