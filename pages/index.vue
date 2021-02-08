@@ -21,10 +21,10 @@
               :description="home.eshop"
               :link="home.sLink"
             />
-            <ProjectPreview 
-              title=""
-              description="Připravujeme"
-              link=""
+            <ProjectPreview class="ready"
+              title="https://ik.imagekit.io/alexborecky/CzechCon/ready_0t-gZmFgT.svg"
+              :description="home.doprava"
+              :link="home.dLink"
             />
         </div>
       </div>

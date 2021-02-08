@@ -1,6 +1,6 @@
 <template>
-    <a :href="link" target="_blank" class="project-preview">
-        <svg class="element" width="119" height="199" viewBox="0 0 119 199" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <a :href="link" target="_blank" class="project-preview flex">
+        <svg class="element" width="119" height="229" viewBox="0 0 119 199" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M118.136 8.94104C92.3876 -4.17506 56.9882 -0.979698 35.2466 18.0541C21.0529 30.48 22.2392 50.0025 22.2833 69.6369M67.6363 197.427C43.5239 190.328 14.1888 186.009 3.69957 163.166C-0.328784 154.393 0.605418 145.585 3.53367 136.666" stroke="white" stroke-width="2"/>
         </svg>
         <div class="info flex column">
@@ -30,9 +30,11 @@
 <style lang="scss" scoped>
 
 .project-preview {
-    max-width: 300px;
+    max-width: 30%;
+    flex-grow: 1;
     position: relative;
     margin: 40px 0;
+    align-items: flex-start;
     .element {
         position: absolute;
         top: -40px;
@@ -41,30 +43,35 @@
     .info {
         position: relative;
         justify-content: flex-start;
+        width: 100%;
         p {
             margin: 16px;
             // align-self: flex-end;
             font-weight: normal;
+            opacity: .8;
+            transition: .3s ease-in-out;
         }
         img {
             width: auto;
             max-width: 240px;
         }
-        a {
-            align-self: flex-end;
-            text-transform: uppercase;
-            svg {
-                margin-left: 2px;
-                transition: .3s ease-in-out;
+    }
+    svg {
+        transition: .3s ease-in-out;
+        path {
+            transition: .3s ease-in-out;
+        }
+    }
+    &:hover {
+        svg {
+            transform: rotate(-20deg) translateY(8px);
+            path {
+                stroke: $main-orange;
             }
-            &:hover {
-                svg {
-                    transform: translateX(4px);
-                    path {
-                        stroke: $main-orange;
-                    }
-                }
-            }
+        }
+        p {
+            transform: translateX(8px);
+            opacity: 1;
         }
     }
     @media only screen and (max-width: 1500px) {
@@ -86,6 +93,15 @@
         .element {
             left: -40px;
             top: -24px;
+        }
+    }
+}
+
+.ready {
+    opacity: 0.4;
+    .info {
+        img {
+            max-width: 140px;
         }
     }
 }
