@@ -12,12 +12,12 @@
         <h2>Na čem děláme?</h2>
         <div class="project-list flex full-width">
             <ProjectPreview 
-              title="https://ik.imagekit.io/alexborecky/CzechCon/vygruntujeme_ghqeaO3ehUpR.png"
+              title="https://ik.imagekit.io/alexborecky/CzechCon/vygruntujeme-light_1__QbmZRYCyWnqC.svg"
               :description="home.vygruntujeme"
               :link="home.vygLink"
             />
             <ProjectPreview 
-              title="https://ik.imagekit.io/alexborecky/CzechCon/vygruntujeme-eshop_6mI2vadGU6qO.png"
+              title="https://ik.imagekit.io/alexborecky/CzechCon/e-shop_XrI7YXeFM.svg"
               :description="home.eshop"
               :link="home.sLink"
             />
