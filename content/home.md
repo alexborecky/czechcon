@@ -7,8 +7,7 @@ subValue: 'Nápadem to začíná, výzvami pokračuje'
 vygruntujeme: 'Úklidovka, která na to jde jinak. Jednoduchá objednávka, profi služba a bezhotovostní platba. Od pravidelného úklidu po velké gruntování.'
 vygLink: 'https://vygruntujeme.cz'
 
-eshop: 'Ty pravé produkty nejen na úklid vybírány a testovány profesionály. 
-Eko, česká výroba, známé značky přehledně na jednom místě. K tomu skvělý zákaznický servis a rychlé doručení.'
+eshop: 'Ty pravé produkty nejen na úklid vybírány a testovány profesionály. Eko, česká výroba, známé značky přehledně na jednom místě.'
 sLink: 'https://vygruntujeme-eshop.cz'
 
 doprava: 'Připravujeme pro vás další projekt, o němž se již brzy dozvíte skrze naše stránky!'

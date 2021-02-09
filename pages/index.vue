@@ -190,13 +190,13 @@ export default {
     }
   }
   .legal {
-    margin-top: 40px;
+    margin: 40px 0;
     ul {
       padding-left: 0;
       list-style: none;
       p {
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 16px;
+        line-height: 24px;
       }
     }
   }
