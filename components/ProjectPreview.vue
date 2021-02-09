@@ -38,7 +38,7 @@
     .element {
         position: absolute;
         top: -40px;
-        left: -56px;
+        left: -64px;
     }
     .info {
         position: relative;
@@ -64,7 +64,6 @@
     }
     &:hover {
         svg {
-            transform: rotate(-20deg) translateY(8px);
             path {
                 stroke: $main-orange;
             }
@@ -84,15 +83,16 @@
         max-width: 400px;
         margin-bottom: 80px;
         .element {
-            left: -40px;
-            top: -24px;
+            left: -56px;
+            top: -40px;
         }
     }
     @media only screen and (max-width: 550px) {
         max-width: 80%;
         .element {
-            left: -40px;
+            left: -64px;
             top: -24px;
+            height: 120px;
         }
     }
 }

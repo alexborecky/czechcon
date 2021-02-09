@@ -39,7 +39,7 @@
       <!-- <div class="hero">
         <h2>Historie</h2>
       </div> -->
-      <div class="hero flex column middle" id="contact">
+      <div class="hero flex column center" id="contact">
         <div class="contact-content">
           <h2>Kontaktujte nás</h2>
           <div class="contacts flex column center">
@@ -80,7 +80,7 @@ export default {
 <style lang="scss" scoped>
 
 .value-proposition {
-  margin-top: -120px;
+  margin-top: -10vh;
   height: 100vh;
   img {
     position: absolute;
@@ -88,14 +88,18 @@ export default {
     right: 0;
     max-width: 100%;
     z-index: 0;
+    @media only screen and (max-width: 1500px) {
+        width: 180%;
+    }
   }
   .value {
     z-index: 1;
-    margin-top: -10vh;
+    // margin-top: -5vh;
   }
   .sub-value {
     font-size: 24px;
     opacity: .56;
+    line-height: 32px;
   }
   @media only screen and (max-width: 1060px) {
       margin-top: 0;
@@ -130,7 +134,8 @@ export default {
 }
 
 #about {
-  min-height: 150vh;
+  min-height: 140vh;
+  max-height: 160vh;
   position: relative;
   @media only screen and (max-width: 960px) {
     align-items: center;
@@ -140,7 +145,7 @@ export default {
     top: 100px;
     left: 0;
     z-index: 0;
-    height: 90%;
+    height: 100%;
     max-width: 100%;
     @media only screen and (max-width: 960px) {
       position: relative;
@@ -173,7 +178,7 @@ export default {
 }
 
 #contact {
-  min-height: 60vh;
+  // height: 40vh !important;
   .contacts {
     a {
       font-size: 24px;
