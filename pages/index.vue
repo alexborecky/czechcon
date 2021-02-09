@@ -29,17 +29,17 @@
         </div>
       </div>
       <div class="hero flex column" id="about">
-        <img class="desktop" src="@/assets/images/timeline.svg" alt="">
-        <img class="phone" src="@/assets/images/timeline-phone.svg" alt="">
         <div class="about-content">
           <h2>O nás</h2>
           <p>{{home.about}}</p>
         </div>
+        <img class="desktop" src="@/assets/images/timeline.svg" alt="">
+        <img class="phone" src="@/assets/images/timeline-phone.svg" alt="">
       </div>
       <!-- <div class="hero">
         <h2>Historie</h2>
       </div> -->
-      <div class="hero flex column center" id="contact">
+      <div class="hero flex column middle" id="contact">
         <div class="contact-content">
           <h2>Kontaktujte nás</h2>
           <div class="contacts flex column center">
@@ -89,7 +89,7 @@ export default {
     max-width: 100%;
     z-index: 0;
     @media only screen and (max-width: 1500px) {
-        width: 180%;
+        // width: 100%;
     }
   }
   .value {
@@ -134,23 +134,21 @@ export default {
 }
 
 #about {
-  min-height: 140vh;
-  max-height: 160vh;
+  // min-height: 140vh;
+  // max-height: 160vh;
   position: relative;
-  @media only screen and (max-width: 960px) {
+  @media only screen and (max-width: 1060px) {
     align-items: center;
   }
   img {
-    position: absolute;
+    // position: absolute;
     top: 100px;
     left: 0;
     z-index: 0;
     height: 100%;
     max-width: 100%;
-    @media only screen and (max-width: 960px) {
-      position: relative;
-      order: 2;
-      top: 0;
+    margin-top: 120px;
+    @media only screen and (max-width: 1060px) {
       margin-top: 40px;
     }
     @media only screen and (max-width: 650px) {
@@ -160,14 +158,20 @@ export default {
   }
   .about-content {
     z-index: 1;
-    align-self: flex-end;
+    right: 0;
+    top: 0;
+    position: absolute;
+    // align-self: flex-end;
     margin: 100px 40px 0 0;
     max-width: 560px;
     @media only screen and (max-width: 1440px) {
       margin: 100px 0 0 0;
       max-width: 480px;
     }
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 1060px) {
+      position: relative;
+      top: 0;
+      margin-top: 40px;
       align-self: flex-start;
     }
     @media only screen and (max-width: 450px) {
@@ -178,7 +182,7 @@ export default {
 }
 
 #contact {
-  // height: 40vh !important;
+  height: 40vh !important;
   .contacts {
     a {
       font-size: 24px;
